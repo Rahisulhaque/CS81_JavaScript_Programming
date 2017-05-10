@@ -14,3 +14,5 @@ employee.prototype.method = funtion()
 
 var eJohnDoe = new employee("John", "Doe", "123-34-1234", "001234", "acct");
 var eSallyRally = new employee("Sally", "Rally","123-34-1235", "001235", "hr");
+
+eJohnDoe.metthod();
