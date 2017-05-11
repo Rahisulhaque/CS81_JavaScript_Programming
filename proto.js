@@ -6,7 +6,7 @@ function Human(ft_name, age, gender, mobile)
 		this.mobile = 2138404870;
 		this.greet = function(Friend)
 		{
-			console.log("Hello " + Friend +" I'm " + this.ft_name + " nice to meet you!")
+			console.log("Hello " + Friend +" I'm " + this.ft_name + " nice to meet you!");
 		}
 	}
 
@@ -28,4 +28,13 @@ Human.prototype.addmobile = function(number)
 Audrey.addmobile(1231231234);
 
 
-conosle.log(Audrey.mobile);
+console.log(Audrey.mobile);
+
+Human.prototype.addethencity = function(eth)
+{
+		this.eth = eth;
+}
+
+Audrey.addethencity("white");
+
+console.log(Audrey.eth);

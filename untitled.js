@@ -13,9 +13,9 @@ function simpleclass( name, ftnum)
 	this.ftnum = ftnum;
 }
 
-simpleclass.prototype.addage( var year)
+simpleclass.prototype.addage(year)
 {
-	this.ftnum = (year+1);
+	this.ftnum = (this.year+1);
 }
 
 var ft_obj = new simpleclass( "Audrey", 22 );
