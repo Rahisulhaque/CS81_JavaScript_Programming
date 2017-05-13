@@ -1,8 +1,8 @@
-var function BankAcct(acctNum, acctOwner, checkBalance, saveBalance, acctType)
+function BankAcct(acctNum, acctOwner, checkBalance, saveBalance, acctType)
 {
 	this.acctNum = acctNum; 
 	this.acctOwner = acctOwner; 
-	this.checkBalance = checkBalanc; 
+	this.checkBalance = checkBalance; 
 	this.saveBalance = saveBalance; 
 	this.acctType = acctType;
 }
@@ -15,8 +15,11 @@ BankAcct.prototype.checkTransfer = function (amount)
 	}
 }
 
-var myAcc  = new BankAcct ( '100','Audrey', '100', '100', 'checking');
 
-myAcc.checkTransfer(100);
 
-console.log(myAcc.checkBalance);
+/*-------------------------------------------- Testing --------------------------------------------------*/
+var AudreysAcc  = new BankAcct ( 100,'Audrey', 100, 100, 'checking');
+
+AudreysAcc.checkTransfer(100);
+
+console.log(AudreysAcc.checkBalance);

@@ -6,6 +6,11 @@ function employee(first, last, ssn, eid,dpt)
 		this.eid = eid;
 		this.dpt = dpt;
 	}
+
+employee.prototype.ssn = '000-00-0000';
+employee.prototype.dpt = 'empty';
+
+
 employee.prototype.method = function()
 {
 
