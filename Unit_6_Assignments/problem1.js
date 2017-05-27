@@ -23,6 +23,9 @@ var eSallyRally = new employee("Sally", "Rally","123-34-1235", "001235", "hr");
 eJohnDoe.method();
 eSallyRally.method();
 
+/*---------------------------------------------Test---------------------------------------------------*/
+
+
 
 var armia = new employee;
- console.log(armia.ssn);
+console.log(armia.ssn);

@@ -1,5 +1,5 @@
 
-function checkProperty(Testobject, givenProperty)
+function checkGivenProperty(Testobject, givenProperty)
 {
 	if(Testobject.hasOwnProperty(givenProperty))
 		{
@@ -31,8 +31,8 @@ function  mytest(property0, property1, property2, property3)
 
 var test1 = new mytest("name", 42, true, [1,2,3]);
 
-checkProperty(test1, "property0");
+checkGivenProperty(test1, "property0");
 
-checkProperty(test1,"property6");
+checkGivenProperty(test1,"property6");
 
-console.log(object.prototype.hasOwnProperty.call(mytest, 'property0'));
+console.log(mytest.prototype.hasOwnProperty.call(test1, 'property0')); // Only works with prototypes!
